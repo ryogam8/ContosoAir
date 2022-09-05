@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{e481e948-f6ec-42b0-8de5-025b4839c4ef}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package-lock.json" />
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Content Include="app.js" />
+        <Content Include="front.js" />
+        <Content Include="server.js" />
+        <Content Include="webpack.config.js" />
+        <Content Include="deployment\azuredeploy.json" />
+        <Content Include="deployment\azuredeploy.parameters.json" />
+        <Content Include="locales\en.json" />
+        <Content Include="locales\es.json" />
+        <Content Include="public\assets\plane.png" />
+        <Content Include="public\assets\b-barcelona.jpg" />
+        <Content Include="public\assets\b-footer.jpg" />
+        <Content Include="public\assets\b-home.jpg" />
+        <Content Include="public\assets\barcelona.jpg" />
+        <Content Include="public\assets\favicon.ico" />
+        <Content Include="public\assets\logo_contoso_air.svg" />
+        <Content Include="public\assets\logo_contoso_air2.svg" />
+        <Content Include="public\assets\microsoft.svg" />
+        <Content Include="public\css\main.css" />
+        <Content Include="public\js\main.js" />
+        <Content Include="public\assets\cities\barcelona.jpg" />
+        <Content Include="public\assets\cities\barcelona_m.jpg" />
+        <Content Include="public\assets\cities\hawaii.jpg" />
+        <Content Include="public\assets\cities\hawaii_m.jpg" />
+        <Content Include="public\assets\cities\paris.jpg" />
+        <Content Include="public\assets\cities\paris_m.jpg" />
+        <Content Include="src\config\i18n.config.js" />
+        <Content Include="src\config\passport.config.js" />
+        <Content Include="src\data\airports.json" />
+        <Content Include="src\data\deals.json" />
+        <Content Include="src\data\destinations.json" />
+        <Content Include="src\data\flights.json" />
+        <Content Include="src\repositories\book.repository.js" />
+        <Content Include="src\repositories\book.repository.model.js" />
+        <Content Include="src\repositories\flights.repository.js" />
+        <Content Include="src\repositories\index.js" />
+        <Content Include="src\routes\auth.js" />
+        <Content Include="src\routes\book.js" />
+        <Content Include="src\routes\booked.js" />
+        <Content Include="src\routes\flights.js" />
+        <Content Include="src\routes\helpers.js" />
+        <Content Include="src\routes\home.js" />
+        <Content Include="src\routes\index.js" />
+        <Content Include="src\routes\purchase.js" />
+        <Content Include="src\routes\receipt.js" />
+        <Content Include="src\services\airports.service.ispec.js" />
+        <Content Include="src\services\airports.service.js" />
+        <Content Include="src\services\airports.service.spec.js" />
+        <Content Include="src\services\book.form.service.js" />
+        <Content Include="src\services\book.form.service.spec.js" />
+        <Content Include="src\services\book.service.js" />
+        <Content Include="src\services\book.service.spec.js" />
+        <Content Include="src\services\date.service.js" />
+        <Content Include="src\services\date.service.spec.js" />
+        <Content Include="src\services\deals.service.ispec.js" />
+        <Content Include="src\services\deals.service.js" />
+        <Content Include="src\services\deals.service.spec.js" />
+        <Content Include="src\services\flights.service.js" />
+        <Content Include="src\services\flights.service.spec.js" />
+        <Content Include="src\services\index.js" />
+        <Content Include="src\services\navbar.service.js" />
+        <Content Include="src\services\navbar.service.spec.js" />
+        <Content Include="src\services\price.service.js" />
+        <Content Include="src\services\price.service.spec.js" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="deployment" />
+        <Folder Include="locales" />
+        <Folder Include="public" />
+        <Folder Include="public\assets" />
+        <Folder Include="public\assets\cities" />
+        <Folder Include="public\css" />
+        <Folder Include="public\fonts" />
+        <Folder Include="public\js" />
+        <Folder Include="scss" />
+        <Folder Include="scss\styles" />
+        <Folder Include="src" />
+        <Folder Include="src\config" />
+        <Folder Include="src\data" />
+        <Folder Include="src\repositories" />
+        <Folder Include="src\routes" />
+        <Folder Include="src\services" />
+        <Folder Include="views" />
+        <Folder Include="views\layouts" />
+        <Folder Include="views\partials" />
+        <Folder Include="views\partials\book" />
+        <Folder Include="views\partials\common" />
+        <Folder Include="views\partials\flights" />
+        <Folder Include="views\partials\purchase" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
