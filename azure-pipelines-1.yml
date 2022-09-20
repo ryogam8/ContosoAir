@@ -10,6 +10,10 @@ resources:
   pipelines:
     - pipeline: buildContosoAir
       source: ryogam8.ContosoAir
+      trigger:
+       branches:
+        include:
+          - master
 
 pool:
   vmImage: ubuntu-latest
