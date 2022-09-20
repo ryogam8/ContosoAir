@@ -36,7 +36,7 @@
             "tags": {
                 "defaultExperience": "MongoDB"
             },
-			"scale": null,
+			// "scale": null,
             "properties": {
 				"name": "[variables('comosdb_default_name')]",
 				"databaseAccountOfferType": "Standard",
